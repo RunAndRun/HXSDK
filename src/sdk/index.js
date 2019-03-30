@@ -1,1 +1,1 @@
-window.websdk = require('./src/connection')
+window.websdk = require('./src/connection').default
