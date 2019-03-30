@@ -1605,6 +1605,14 @@ Strophe.Connection = function (service, options) {
 };
 
 Strophe.Connection.prototype = {
+      setJid: function (jid) {
+            this.jid = jid;
+            this.authzid = Strophe.getBareJidFromJid(this.jid);
+            this.authcid = Strophe.getNodeFromJid(this.jid);
+      },
+      getJid: function () {
+            return this.jid;
+      },
     /** Function: reset
      *  Reset the connection.
      *
