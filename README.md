@@ -6,4 +6,6 @@ copy 了环信 websdk 和 strophe.js 的源码， 将用在vue中的坑填了一
 
 usage:
 
+require('./dist/sdk')
+
 const conn = new window.websdk.connection({});
