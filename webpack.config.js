@@ -1,13 +1,13 @@
 const path = require('path')
 const MinifyPlugin = require("babel-minify-webpack-plugin")
-console.log(path)
+
 module.exports = {
   entry: {
     app: './src/sdk/index.js'
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'sdk-[hash:6].js'
+    filename: 'sdk.js'
   },
   module: {
     rules: [
