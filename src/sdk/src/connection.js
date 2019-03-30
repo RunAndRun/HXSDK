@@ -9,8 +9,13 @@ var CryptoJS = require('crypto-js');
 var _ = require('underscore');
 var isStropheLog;
 var stropheConn = null
-import strophe from '../../strophe/strophe'
-var Strophe = strophe.Strophe
+
+var Strophe = require('../../strophe/strophe').default.Strophe
+var meStrophe = require('../../strophe/strophe').default
+window.$iq = meStrophe.$iq;
+window.$build = meStrophe.$build;
+window.$msg = meStrophe.$msg;
+window.$pres = meStrophe.$pres;
 
 window.URL = window.URL || window.webkitURL || window.mozURL || window.msURL;
 
