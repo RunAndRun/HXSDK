@@ -8,7 +8,7 @@ usage:
 
 require('./dist/sdk')
 
-const conn = new window.websdk.connection({});
+const conn = new window.WebIM.connection({});
 
 
 注： 报错$iq 等方法找不到，所以将 $iq, $msg ...等方法也放到了 window（全局作用域）上， 目前没找到更好的办法，暂时先这样了。

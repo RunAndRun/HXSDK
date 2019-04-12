@@ -1,1 +1,1 @@
-window.websdk = require('./src/connection').default
+window.WebIM = require('./src/connection').default
