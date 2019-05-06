@@ -7,7 +7,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'sdk.js'
+    filename: 'sdk.js',
+    library: 'WebIM'
   },
   module: {
     rules: [
